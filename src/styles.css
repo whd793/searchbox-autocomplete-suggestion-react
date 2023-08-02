@@ -1,0 +1,66 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* height: 100px; */
+  background-color: #ccc;
+  overflow: hidden;
+  overflow-x: hidden;
+}
+
+.searchbox__input {
+  height: 20px;
+  width: 200px;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.searchbox__input:focus {
+  outline: none;
+}
+
+.searchbox__results {
+  background-color: white;
+  display: grid;
+  place-items: center;
+  width: 200px;
+  height: 50px;
+  /* margin: auto; */
+  border: 1px solid #eee;
+  text-align: center;
+  /* vertical-align: middle; */
+  /* align-items: center; */
+  /* line-height: auto; */
+  /* line-height: 50px; */
+  /* padding: 1rem 0; */
+  /* height: 50px; */
+  /* overflow: hidden; */
+  /* overflow-y: scroll; */
+}
+
+.searchbox__results:hover {
+  background-color: #aaa;
+  cursor: pointer;
+}
+
+.searchbox__options {
+  max-height: 300px;
+  height: auto;
+  display: none;
+  background-color: blue;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 200px;
+  margin: auto;
+}
+
+.active {
+  display: block;
+}
